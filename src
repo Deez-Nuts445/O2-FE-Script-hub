@@ -144,9 +144,9 @@ end
 
 if func == "getjobid" then
 	_getjobid()
-	if m then
-		createNotif("O2 FE Script Hub","Script Executed!")
-	end
+if m then
+createNotif("O2 FE Script Hub","Script Executed!")
+end
 end
 if func == "exit" then
 	_shutdown()
@@ -154,49 +154,49 @@ end
 if func == "utg" then
 _utg()
 if m then
-	createNotif("O2 FE Script Hub","Script Executed!")
+createNotif("O2 FE Script Hub","Script Executed!")
 end
 end
 if func == "wallwalk" then
 	_wallwalk()
 if m then
-		createNotif("O2 FE Script Hub","Script Executed!")
-	end
+createNotif("O2 FE Script Hub","Script Executed!")
+end
 end
 if func == "gamegui" then
 _gamegui()
 if m then
-		createNotif("O2 FE Script Hub","Script Executed!")
-	end
+createNotif("O2 FE Script Hub","Script Executed!")
+end
 end
 if func == "ball" then
 	_ball()
 if m then
-		createNotif("O2 FE Script Hub","Script Executed!")
-	end
+createNotif("O2 FE Script Hub","Script Executed!")
+end
 end
 if func == "alltools" then
 _GetAllTools()
 if m then
-		createNotif("O2 FE Script Hub","Script Executed!")
-	end
+createNotif("O2 FE Script Hub","Script Executed!")
+end
 end
 if func == "showglass" then
 	showglass()
 if m then
-		createNotif("O2 FE Script Hub","Script Executed!")
-	end
+createNotif("O2 FE Script Hub","Script Executed!")
+end
 end
 if func == "pladmin" then
 _pladmin()
 if m then
-		createNotif("O2 FE Script Hub","Script Executed!")
-	end
+createNotif("O2 FE Script Hub","Script Executed!")
+end
 end
 if func == "admin" then
-_admin()if m then
-		createNotif("O2 FE Script Hub","Script Executed!")
-	end
+if m then
+createNotif("O2 FE Script Hub","Script Executed!")
+end
 end
 if func == "fecheck" then
 _fecheck()
@@ -204,6 +204,6 @@ end
 if func == "iy" then
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 if m then
-		createNotif("O2 FE Script Hub","Script Executed!")
-	end
+createNotif("O2 FE Script Hub","Script Executed!")
+end
 end
