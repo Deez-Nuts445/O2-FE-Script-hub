@@ -1,6 +1,14 @@
 -- getgenv() is only avabiale for exploits like krnl,scriptware,synapxe etc.
 -- if you cant access getgenv then wait for the _G version(more dangerous as smart devs can use a for if statement to see what table name they didnt add and kick you(basicily and _G or anti exploit with _G thing))
 local func = string.lower(getgenv().f)
+local function createNotif(title,text,icon,duration)
+		game.StarterGui:SetCore("SendNotification", {
+			Title = title; 
+			Text = text;
+			Icon = icon; 
+			Duration = duration; 
+		})
+	end
 function _getjobid()
 	function log(l1,l2)
 		local t = {l1,l2}
@@ -135,37 +143,47 @@ end
 
 if func == "getjobid" then
 	_getjobid()
+	createNotif("O2 FE Script Hub","Script Executed!")
 end
 if func == "exit" then
 	_shutdown()
 end
 if func == "utg" then
 _utg()
+createNotif("O2 FE Script Hub","Script Executed!")
 end
 if func == "wallwalk" then
 	_wallwalk()
+	createNotif("O2 FE Script Hub","Script Executed!")
 end
 if func == "gamegui" then
 _gamegui()
+createNotif("O2 FE Script Hub","Script Executed!")
 end
 if func == "ball" then
 	_ball()
+	createNotif("O2 FE Script Hub","Script Executed!")
 end
 if func == "alltools" then
 _GetAllTools()
+createNotif("O2 FE Script Hub","Script Executed!")
 end
 if func == "showglass" then
 	showglass()
+createNotif("O2 FE Script Hub","Script Executed!")
 end
 if func == "pladmin" then
 _pladmin()
+createNotif("O2 FE Script Hub","Script Executed!")
 end
 if func == "admin" then
 _admin()
+createNotif("O2 FE Script Hub","Script Executed!")
 end
 if func == "fecheck" then
 _fecheck()
 end
 if func == "iy" then
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+createNotif("O2 FE Script Hub","Script Executed!")
 end
