@@ -1,0 +1,257 @@
+-- getgenv() is only avabiale for exploits like krnl,scriptware,synapxe etc.
+
+-- if you cant access getgenv then wait for the _G version(more dangerous as smart devs can use a for if statement to see what table name they didnt add and kick you(basicily and _G or anti exploit with _G thing))
+
+local func = string.lower(getgenv().f)
+
+function _getjobid()
+
+	function log(l1,l2)		local t = {l1,l2}
+
+		-- "If you cannot see the table contents, turn off log mode in the 3 dots in output!"
+
+		print(t)
+
+	end
+
+	function toClipboard(String)
+
+		local clipBoard = setclipboard or toclipboard or set_clipboard or (Clipboard and Clipboard.set)
+
+		if clipBoard then
+
+			clipBoard(String)
+
+			print("Ok")
+
+		else
+
+			warn("No")
+
+		end
+
+	end
+
+	toClipboard(game.JobId)
+
+end
+
+function _shutdown()
+
+	game:shutdown()
+
+end
+
+function _utg()
+
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Blukez/Scripts/main/UTG%20V3%20RAW"))()
+
+end
+
+function _wallwalk()
+
+	loadstring(game:HttpGetAsync("https://pastebin.com/raw/RY9cBbdG"))()
+
+end
+
+function _gamegui()
+
+	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/InfectiousSmile.lua"))()
+
+end
+
+function _ball()
+
+	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Deez-Nuts445/GHSandbox_LUA_1/main/Ball"))()
+
+end
+
+function _GetAllTools()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hellamane/epixcryan/main/source.lua"))()
+
+local args = {
+
+    [1] = "SuperLauncher",
+
+    [2] = 0
+
+}
+
+game:GetService("ReplicatedStorage").ShopEvent:FireServer(unpack(args))
+
+local args = {
+
+    [1] = "SuperBomb",
+
+    [2] = 0
+
+}
+
+game:GetService("ReplicatedStorage").ShopEvent:FireServer(unpack(args))
+
+local args = {
+
+    [1] = "Teleport",
+
+    [2] = 0
+
+}
+
+game:GetService("ReplicatedStorage").ShopEvent:FireServer(unpack(args))
+
+local args = {
+
+    [1] = "FastLauncher",
+
+    [2] = 0
+
+}
+
+game:GetService("ReplicatedStorage").ShopEvent:FireServer(unpack(args))
+
+local args = {
+
+    [1] = "Vaporizer",
+
+    [2] = 0
+
+}
+
+game:GetService("ReplicatedStorage").ShopEvent:FireServer(unpack(args))
+
+local args = {
+
+    [1] = "snap",
+
+    [2] = 0
+
+}
+
+game:GetService("ReplicatedStorage").ShopEvent:FireServer(unpack(args))
+
+local args = {
+
+    [1] = "UltimateBomb",
+
+    [2] = 0
+
+}
+
+game:GetService("ReplicatedStorage").ShopEvent:FireServer(unpack(args))
+
+local args = {
+
+    [1] = "Virus",
+
+    [2] = -200000000000
+
+}
+
+game:GetService("ReplicatedStorage").ShopEvent:FireServer(unpack(args))
+
+end
+
+function showglass()
+
+local c = workspace['Glass Bridge'].GlassPane:GetChildren()
+
+for i=1,#c do
+
+if c[i]['1'].CanCollide == true then
+
+c[i]['1'].Transparency = 0
+
+elseif c[i]['2'].CanCollide == true then
+
+c[i]['2'].Transparency = 0
+
+end
+
+end
+
+end
+
+function _pladmin()
+
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/PrisonLife'),true))()
+
+end
+
+function _admin()
+
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/Deez-Nuts445/GHSandbox_LUA_1/main/Admin'),true))()
+
+end
+
+function _fecheck()
+
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/Deez-Nuts445/GHSandbox_LUA_1/main/FECheck'),true))()
+
+end
+
+if func == "getjobid" then
+
+	_getjobid()
+
+end
+
+if func == "exit" then
+
+	_shutdown()
+
+end
+
+if func == "utg" then
+
+_utg()
+
+end
+
+if func == "wallwalk" then
+
+	_wallwalk()
+
+end
+
+if func == "gamegui" then
+
+_gamegui()
+
+end
+
+if func == "ball" then
+
+	_ball()
+
+end
+
+if func == "alltools" then
+
+_GetAllTools()
+
+end
+
+if func == "showglass" then
+
+	showglass()
+
+end
+
+if func == "pladmin" then
+
+_pladmin()
+
+end
+
+if func == "admin" then
+
+_admin()
+
+end
+
+if func == "fecheck" then
+
+_fecheck()
+
+end
