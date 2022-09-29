@@ -207,3 +207,9 @@ if m then
 createNotif("O² FE Script Hub","Script Executed!","rbxassetid://11104355881",7)
 end
 end
+if func == "reach" then
+loadstring(game:HttpGet('https://pastebin.com/raw/Jsghb8bt'))()
+if m then
+createNotif("O² FE Script Hub","Script Executed!","rbxassetid://11104355881",7)
+end
+end
