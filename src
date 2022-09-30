@@ -2,6 +2,15 @@
 -- if you cant access getgenv then wait for the _G version(more dangerous as smart devs can use a for if statement to see what table name they didnt add and kick you(basicily and _G or anti exploit with _G thing))
 local func = string.lower(getgenv().f)
 local m = getgenv().m
+function toClipboard(String)
+		local clipBoard = setclipboard or toclipboard or set_clipboard or (Clipboard and Clipboard.set)
+		if clipBoard then
+			clipBoard(String)
+			print("Ok")
+		else
+			warn("No")
+		end
+	end
 local function createNotif(title,text,icon,duration,bt,cb)
 		game.StarterGui:SetCore("SendNotification", {
 			Title = title; 
@@ -17,15 +26,6 @@ function _getjobid()
 		local t = {l1,l2}
 		-- "If you cannot see the table contents, turn off log mode in the 3 dots in output!"
 		print(t)
-	end
-	function toClipboard(String)
-		local clipBoard = setclipboard or toclipboard or set_clipboard or (Clipboard and Clipboard.set)
-		if clipBoard then
-			clipBoard(String)
-			print("Ok")
-		else
-			warn("No")
-		end
 	end
 
 	toClipboard(game.JobId)
