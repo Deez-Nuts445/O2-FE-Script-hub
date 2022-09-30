@@ -2,11 +2,13 @@
 -- if you cant access getgenv then wait for the _G version(more dangerous as smart devs can use a for if statement to see what table name they didnt add and kick you(basicily and _G or anti exploit with _G thing))
 local func = string.lower(getgenv().f)
 local m = getgenv().m
-local function createNotif(title,text,icon,duration)
+local function createNotif(title,text,icon,duration,bt,cb)
 		game.StarterGui:SetCore("SendNotification", {
 			Title = title; 
 			Text = text;
 			Icon = icon; 
+			Button1 = bt;
+			Callback = cb;
 			Duration = duration; 
 		})
 	end
@@ -145,7 +147,7 @@ end
 if func == "getjobid" then
 	_getjobid()
 if m then
-createNotif("O₂ FE Script Hub","Script Executed!","rbxasset://11122815003",7)
+createNotif("O₂ FE Script Hub","Script Executed!","rbxasset://11122815003",7,"Join the discord server.",print("hi"))
 end
 end
 if func == "exit" then
@@ -154,48 +156,48 @@ end
 if func == "utg" then
 _utg()
 if m then
-createNotif("O₂ FE Script Hub","Script Executed!","rbxasset://11122815003",7)
+createNotif("O₂ FE Script Hub","Script Executed!","rbxasset://11122815003",7,"Join the discord server.",print("hi"))
 end
 end
 if func == "wallwalk" then
 	_wallwalk()
 if m then
-createNotif("O₂ FE Script Hub","Script Executed!","rbxasset://11122815003",7)
+createNotif("O₂ FE Script Hub","Script Executed!","rbxasset://11122815003",7,"Join the discord server.",print("hi"))
 end
 end
 if func == "gamegui" then
 _gamegui()
 if m then
-createNotif("O₂ FE Script Hub","Script Executed!","rbxasset://11122815003",7)
+createNotif("O₂ FE Script Hub","Script Executed!","rbxasset://11122815003",7,"Join the discord server.",print("hi"))
 end
 end
 if func == "ball" then
 	_ball()
 if m then
-createNotif("O₂ FE Script Hub","Script Executed!","rbxasset://11122815003",7)
+createNotif("O₂ FE Script Hub","Script Executed!","rbxasset://11122815003",7,"Join the discord server.",print("hi"))
 end
 end
 if func == "alltools" then
 _GetAllTools()
 if m then
-createNotif("O₂ FE Script Hub","Script Executed!","rbxasset://11122815003",7)
+createNotif("O₂ FE Script Hub","Script Executed!","rbxasset://11122815003",7,"Join the discord server.",print("hi"))
 end
 end
 if func == "showglass" then
 	showglass()
 if m then
-createNotif("O₂ FE Script Hub","Script Executed!","rbxasset://11122815003",7)
+createNotif("O₂ FE Script Hub","Script Executed!","rbxasset://11122815003",7,"Join the discord server.",print("hi"))
 end
 end
 if func == "pladmin" then
 _pladmin()
 if m then
-createNotif("O₂ FE Script Hub","Script Executed!","rbxasset://11122815003",7)
+createNotif("O₂ FE Script Hub","Script Executed!","rbxasset://11122815003",7,"Join the discord server.",print("hi"))
 end
 end
 if func == "admin" then
 if m then
-createNotif("O₂ FE Script Hub","Script Executed!","rbxasset://11122815003",7)
+createNotif("O₂ FE Script Hub","Script Executed!","rbxasset://11122815003",7,"Join the discord server.",print("hi"))
 end
 end
 if func == "fecheck" then
@@ -204,12 +206,12 @@ end
 if func == "iy" then
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 if m then
-createNotif("O₂ FE Script Hub","Script Executed!","rbxasset://11122815003",7)
+createNotif("O₂ FE Script Hub","Script Executed!","rbxasset://11122815003",7,"Join the discord server.",print("hi"))
 end
 end
 if func == "reach" then
 loadstring(game:HttpGet('https://pastebin.com/raw/Jsghb8bt'))()
 if m then
-createNotif("O₂ FE Script Hub","Script Executed!","rbxasset://11122815003",7)
+createNotif("O₂ FE Script Hub","Script Executed!","rbxasset://11122815003",7,"Join the discord server.",print("hi"))
 end
 end
