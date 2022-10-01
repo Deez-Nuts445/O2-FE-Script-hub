@@ -214,15 +214,9 @@ createNotif("O₂ FE Script Hub","Script Executed!","rbxasset://11122815003",7)
 end
 end
 if func == "discord" then
-function toClipboard(String)
-		local clipBoard = setclipboard or toclipboard or set_clipboard or (Clipboard and Clipboard.set)
-		if clipBoard then
-			clipBoard(String)
-			print("Ok")
-		else
-			warn("No")
-		end
-	end
-	
-	toClipboard(".gg/")
+getgenv().InviteCode = "6kp4eSMq8k"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaQLeak/Scripts/main/Discord-Auto-Join.lua"))()
+if m then
+createNotif("O₂ FE Script Hub","Discord Joined!","rbxasset://11122815003",7)
+end
 end
