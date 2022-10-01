@@ -220,3 +220,10 @@ if m then
 createNotif("O₂ FE Script Hub","Discord Joined!","rbxasset://11122815003",7)
 end
 end
+if func == "flinggui" then
+loadstring(game:HttpGet('https://pastebin.com/raw/r97d7dS0', true))()
+if m then
+createNotif("O₂ FE Script Hub","Discord Joined!","rbxasset://11122815003",7)
+end
+end
+
