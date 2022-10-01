@@ -213,3 +213,16 @@ if m then
 createNotif("O₂ FE Script Hub","Script Executed!","rbxasset://11122815003",7)
 end
 end
+if func == "discord" then
+function toClipboard(String)
+		local clipBoard = setclipboard or toclipboard or set_clipboard or (Clipboard and Clipboard.set)
+		if clipBoard then
+			clipBoard(String)
+			print("Ok")
+		else
+			warn("No")
+		end
+	end
+	
+	toCLipboard(".gg/")
+end
