@@ -224,5 +224,5 @@ function toClipboard(String)
 		end
 	end
 	
-	toCLipboard(".gg/")
+	toClipboard(".gg/")
 end
