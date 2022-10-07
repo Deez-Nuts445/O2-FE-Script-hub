@@ -232,3 +232,9 @@ if m then
 createNotif("O₂ FE Script Hub","Script Executed! press Q to toggle gui.","http://www.roblox.com/asset/?id=11122814990",7)
 end
 end
+if func == "notesgui" then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Deez-Nuts445/GHSandbox_LUA_1/main/notesgui"))()
+if m then
+createNotif("O₂ FE Script Hub","Script Executed!","http://www.roblox.com/asset/?id=11122814990",7)
+end
+end
