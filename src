@@ -245,8 +245,8 @@ createNotif("O₂ FE Script Hub","Script Executed! Press Z to toggle.","http://w
 end
 end
 
-if func == "dx" then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Deez-Nuts445/GHSandbox_LUA_1/main/AntiGrav"))()
+if func == "domain x" then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fortnitemodder/DomainX/main/Source", true))()
 if m then
 createNotif("O₂ FE Script Hub","Script Executed! Press K to toggle.","http://www.roblox.com/asset/?id=11122814990",7)
 end
