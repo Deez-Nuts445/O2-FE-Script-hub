@@ -244,3 +244,10 @@ if m then
 createNotif("O₂ FE Script Hub","Script Executed! Press Z to toggle.","http://www.roblox.com/asset/?id=11122814990",7)
 end
 end
+
+if func == "dx" then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Deez-Nuts445/GHSandbox_LUA_1/main/AntiGrav"))()
+if m then
+createNotif("O₂ FE Script Hub","Script Executed! Press K to toggle.","http://www.roblox.com/asset/?id=11122814990",7)
+end
+end
